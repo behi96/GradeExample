@@ -1,5 +1,5 @@
-//´õºíÇü ¹è¿­À» ¸¸µé¾î¼­ Á¡¼ö´Â ´Ù ´Ù¸£°Ô ÇÑ µÚ¿¡ Á¤´äÀÌ ½Ç¼ö·Î ³ª¿À°Ô
-// ´õºíÇü ¹è¿­¿¡ °¢ ¹®Á¦ÀÇ Á¡¼ö¸¦ ³Ö¾îÁÜ!
+//ë”ë¸”í˜• ë°°ì—´ì„ ë§Œë“¤ì–´ì„œ ì ìˆ˜ëŠ” ë‹¤ ë‹¤ë¥´ê²Œ í•œ ë’¤ì— ì •ë‹µì´ ì‹¤ìˆ˜ë¡œ ë‚˜ì˜¤ê²Œ
+// ë”ë¸”í˜• ë°°ì—´ì— ê° ë¬¸ì œì˜ ì ìˆ˜ë¥¼ ë„£ì–´ì¤Œ!
 
 public class GradingMain_2 {
 	
@@ -14,39 +14,41 @@ public class GradingMain_2 {
 			}
 			else System.out.print("X\t");
 		 }
-		 System.out.println(s_grade+"Á¡");
+		 System.out.println(s_grade+"ì ");
 	}
 
 	public static void main(String[] answer) {
+		
+		System.out.println("ì‹œì‘í•©ë‹ˆë‹¤!^_^");
 
-		//´ä¹è¿­
+		//ë‹µë°°ì—´
 		double answer_grade[] = {10.0, 5.6, 14.4, 7.8, 12.2, 8.0, 11.4, 10.6, 15.5, 4.5};
 		
-		//0¹ø ¹æÀº ÇĞ»ı ÀÌ¸§
+		//0ë²ˆ ë°©ì€ í•™ìƒ ì´ë¦„
 		int grade[][] = { {1,2,3,4,5},
-					{1,3,2,4,3,1,4,2,2,1}, //1¹øÇĞ»ı
-					{1,3,2,4,2,1,4,2,2,3}, //2¹øÇĞ»ı
-					{1,4,2,4,1,1,1,2,3,1}, //3¹øÇĞ»ı
-					{2,3,2,1,1,3,2,2,2,1}, //4¹øÇĞ»ı
-					{1,2,2,4,4,1,4,2,4,1}  //5¹øÇĞ»ı
+					{1,3,2,4,3,1,4,2,2,1}, //1ë²ˆí•™ìƒ
+					{1,3,2,4,2,1,4,2,2,3}, //2ë²ˆí•™ìƒ
+					{1,4,2,4,1,1,1,2,3,1}, //3ë²ˆí•™ìƒ
+					{2,3,2,1,1,3,2,2,2,1}, //4ë²ˆí•™ìƒ
+					{1,2,2,4,4,1,4,2,4,1}  //5ë²ˆí•™ìƒ
 				};
 		
 		if(answer.length!=10)
-			System.out.println("Á¤´äÀÇ °³¼ö°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇØ ÁÖ¼¼¿ä");
+			System.out.println("ì •ë‹µì˜ ê°œìˆ˜ê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•´ ì£¼ì„¸ìš”");
 		
-		 System.out.print("ÇĞ»ı"+grade[0][0]+" =\t");
+		 System.out.print("í•™ìƒ"+grade[0][0]+" =\t");
 		 IsGrade(0,answer,grade,answer_grade);
 		 
-		 System.out.print("ÇĞ»ı"+grade[0][1]+" =\t"); 
+		 System.out.print("í•™ìƒ"+grade[0][1]+" =\t"); 
 		 IsGrade(1,answer,grade,answer_grade);
 		 
-		 System.out.print("ÇĞ»ı"+grade[0][2]+" =\t"); 
+		 System.out.print("í•™ìƒ"+grade[0][2]+" =\t"); 
 		 IsGrade(2,answer,grade,answer_grade);
 		 
-		 System.out.print("ÇĞ»ı"+grade[0][3]+" =\t"); 
+		 System.out.print("í•™ìƒ"+grade[0][3]+" =\t"); 
 		 IsGrade(3,answer,grade,answer_grade);
 		 
-		 System.out.print("ÇĞ»ı"+grade[0][4]+" =\t"); 
+		 System.out.print("í•™ìƒ"+grade[0][4]+" =\t"); 
 		 IsGrade(4,answer,grade,answer_grade);
 	}
 
